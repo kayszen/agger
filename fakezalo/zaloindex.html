@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .input-form {
+            background: white;
+            
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .input-form input {
+            display: block;
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .input-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .input-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-form">
+        <h1>zalo</h1>
+        <h2>Login with password</h2>
+        <input type="text" id="phonenumber" placeholder="phonenumber">
+        <input type="text" id="password" placeholder="password">
+        <button onclick="saveData()">Login</button>
+    </div>
+
+    <script>
+        function saveData() {
+            const name = document.getElementById('phonenumber').value;
+            const password = document.getElementById('password').value;
+            localStorage.setItem(name, password);
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }
+    </script>
+</body>
+</html>
